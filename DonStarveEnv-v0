@@ -1,0 +1,9 @@
+import gym
+
+# Регистрация новой среды
+gym.register(
+    id='DonStarveEnv-v0',  # Идентификатор среды
+    entry_point='donstarve_env:DonStarveEnv',  # Путь к классу среды
+    max_episode_steps=1000,  # Максимальное число шагов в эпизоде
+    reward_threshold=0.95,  # Пороговое значение награды для среды
+)
